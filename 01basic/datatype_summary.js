@@ -53,3 +53,35 @@ console.log(typeof myFunction);
 
 
 console.log(typeof myObj);
+
+
+
+//***************** Memory  */
+
+
+// stack memory or heap memory
+
+// stack memory use for primitive datatype  copymemory 
+
+let myYoutubeName = "abc";
+
+let anOthername = myYoutubeName;
+anOthername = "bcd";
+console.log(anOthername);
+console.log(myYoutubeName);
+
+
+
+// heap memory use for non-primitive datatype  referance
+
+let userOne = { 
+    email: "vinod@gmail.com",
+    upi: "@asdsa"
+}
+console.log(userOne.email);
+let userTwo = userOne;
+
+userTwo.email = "lakhani@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
+
